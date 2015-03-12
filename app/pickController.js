@@ -35,6 +35,7 @@ app.controller('pickController',function($scope,Word,$timeout,$firebaseObject){
     $scope.init();
 
     $scope.newpool = function () {
+        $scope.loading=false;
 
         var idx1=0;
         var idx2=0;
