@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a ng-href="#/" class="brand-logo">PikkaWord</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a ng-href="#result"><i class="mdi-editor-insert-chart large icon-demo"></i></a></li>
+         </ul>
+    </div>
+</nav>
+<ng-view>
+
+</ng-view>
+
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/materialize/bin/materialize.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+     <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="app.js"></script>
+    <script src="pickService.js"></script>
+
+<script src="pickController.js"></script>
+<script src="adminController.js"></script>
+<script src="resultController.js"></script>
+
+
+</body>
+</html>
