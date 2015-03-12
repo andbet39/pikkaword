@@ -1,11 +1,9 @@
-/**
- * Created by andrea.terzani on 12/03/2015.
- */
 
-app.controller('resultController', ['$scope','Word', function($scope,Word){
+
+app.controller('resultController',function($scope,Word,$timeout){
 
 
     $scope.words = Word.all;
 
 
-}]);
+});

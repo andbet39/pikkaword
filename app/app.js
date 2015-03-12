@@ -20,6 +20,10 @@ app.config(['$routeProvider',
             when('/about', {
                 templateUrl: 'view/about.html'
             }).
+            when('/cloud', {
+                templateUrl: 'view/cloud.html',
+                controller: 'cloudController'
+            }).
             otherwise({
                 redirectTo: '/'
             });
