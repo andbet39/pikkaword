@@ -8,7 +8,7 @@ app.controller('pickController',function($scope,Word,$timeout,$firebaseObject){
     var ref = new Firebase('https://pickaword.firebaseio.com');
     var lastVoted = $firebaseObject(ref.child('lastVoted'));
 
-
+    $scope.loading=true;
     $scope.words = Word.all;
     $scope.popup={'value':"test"};
 
@@ -19,6 +19,8 @@ app.controller('pickController',function($scope,Word,$timeout,$firebaseObject){
         $timeout( function(){
             if($scope.words.length<1){
                 $scope.init();
+                $scope.loading=false;
+
             }else{
                 $scope.newpool();
             }
