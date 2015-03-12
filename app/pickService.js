@@ -5,8 +5,8 @@
 
 app.factory('Word' , function($firebaseArray){
 
-   var ref = new Firebase('https://pickaword.firebaseio.com/words');
-    var words = $firebaseArray(ref);
+    var ref = new Firebase('https://pickaword.firebaseio.com');
+    var words = $firebaseArray(ref.child('words'));
 
 
 

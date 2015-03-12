@@ -17,6 +17,9 @@ app.config(['$routeProvider',
                 templateUrl: 'view/result.html',
                 controller: 'resultController'
             }).
+            when('/about', {
+                templateUrl: 'view/about.html'
+            }).
             otherwise({
                 redirectTo: '/'
             });

@@ -1,11 +1,11 @@
 .wordpanel{
-    height:90vh;
+    height:100vh;
     vertical-align:middle;
     text-align: center;
 
 }
 
-h1
+.word
 {
     position: absolute;
     top: 50%;
@@ -13,4 +13,14 @@ h1
     height: 30%;
     width: 50%;
     margin: -15% 0 0 -25%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
