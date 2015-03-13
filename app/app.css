@@ -18,15 +18,12 @@
 
 
 .canvas{
-            background: #CCC;
-            display: block;
-            position: absolute;
-            top: 70px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+    height:100vh;
+    margin: auto;
+      display: block;
+  position: relative;
+  overflow: hidden;
 
 }
+
+
