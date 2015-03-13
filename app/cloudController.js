@@ -8,7 +8,7 @@ var options ={
   },
   fontFamily: 'Times, serif',
   color: function (word, weight) {
-    return (weight === 12) ? '#f02222' : '#c09292';
+     return '#ee6e73';
   },
   rotateRatio: 0.3,
   backgroundColor: '#ffffff'
